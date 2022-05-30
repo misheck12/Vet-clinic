@@ -1,31 +1,49 @@
-# curriculum-databases-projects-template
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+# Stock market
 
+> "Stock Market Metrics" is a website wher you can find information abput a cpmpany financial statement in the previous years.
+## Built With
+
+- Major languages
+
+- postgresql
+   
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+To get a local copy up and running follow these simple example steps.
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Run npm start to run the project
+- Run npm run build if you have changes anything to build the bundle.
+- Then open the dist/index.html file. 
 
+### Prerequisites
 
-## Authors
+```
+node and npm
+```
 
-👤 **Author1**
+###  install
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Getting packages and debuging with Stylelint
+>npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 
-👤 **Author2**
+Getting packages and debuging with Webhint
+>npm init -y
+>npm install --save-dev hint@6.x
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+### Usage
+
+- streaming movies
+
+## Author
+
+👤 **Misheck Livingi**
+
+- GitHub: [@githubhandle](https://github.com/misheck12)
+- Twitter: [@twitterhandle](https://twitter.com/mishecklivingi2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/misheck-livingi-a0b536142/)
 
 ## 🤝 Contributing
 
@@ -39,9 +57,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+-Original design idea by Nelson Sakwa on Behance.
+
 
 ## 📝 License
 

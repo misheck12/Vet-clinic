@@ -10,4 +10,5 @@ CREATE TABLE animals (
     species string NULL,
 );
 
+ALTER TABLE animals ADD species CHAR(40);
 

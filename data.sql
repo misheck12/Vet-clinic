@@ -11,3 +11,17 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Boarmon', '2005-07-06', 7, true, 20.4);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Blossom', '1998-13-10', 3, true, 17.0);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Ditto', '2022-14-05', 4, true, 22.0);
+
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species = NULL;
+DELETE FROM animals;
+ROLLBACK BeforeDelete;
+
+/*Delete all animals born after Jan 1st, 2022.*/
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+
+/*Update all animals' weight to be their weight multiplied by -1.*/
+UPDATE animals SET weight_kg = (weight_kg * (-1));
+
+/*Update all animals' weights that are negative to be their weight multiplied by -1.*/
+UPDATE animals SET weight_kg = (weight_kg * (-1)) WHERE weight_kg LIKE '%-';

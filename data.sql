@@ -36,3 +36,19 @@ INSERT INTO species (name) VALUES ('pokemon');
 
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species = 'pokemon' WHERE species = NULL;
+
+----Vets table----
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('william Tatcher', 34, '2002-04-23');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Maisy Smith', 26, '2019-06-17');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, '1981-05-17');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Jack Harkness', 38, '2008-06-08');
+
+-----specializations table-----
+INSERT INTO specializations (vet_id, species_id) VALUES (1, 1);
+INSERT INTO specializations (vet_id, species_id) VALUES (3, 2);
+INSERT INTO specializations (vet_id, species_id) VALUES (3, 1);
+INSERT INTO specializations (vet_id, species_id) VALUES (4, 2);
+
+-- INSERT DATA INTO VISIT TABLE
+
+INSERT INTO visits (animal_id, vet_id, date) VALUES(4, 1, '24-05-2020'), (4, 3, '22-07-2020'), (5, 4, '02-02-2021'), (6, 2, '05-01-2020'), (6, 2, '08-03-2020'), (6, 2, '14-05-2020'), (7, 3, '04-05-2021'), (8, 4, '24-02-2021'), (9, 2, '21-12-2019'), (9, 1, '02-08-020'), (9, 2, '07-04-2021'), (10, 3, '29-09-2019'), (11, 4, '03-10-2020'), (11, 4, '04-11-2020'), (12, 2, '24-01-2019'), (12, 2, '15-05-2019'), (12, 2, '27-02-2020'), (12, 2, '03-07-2020'), (13, 3, '24-05-2020'), (13, 1, '11-01-2021');
